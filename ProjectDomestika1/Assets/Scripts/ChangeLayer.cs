@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using UnityEngine;
 
 public class ChangeLayer : MonoBehaviour
@@ -12,7 +13,7 @@ public class ChangeLayer : MonoBehaviour
         
         
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +21,7 @@ public class ChangeLayer : MonoBehaviour
             Debug.Log("Hai premuto W");
             SpriteRenderer spriteRenderer = this.GetComponent<SpriteRenderer>();
             spriteRenderer.sortingOrder = 2;
+            
 
 
         }
